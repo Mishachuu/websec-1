@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="calc">
+            <div class="calc__group">
+                <input type="number" class="calc__input calc__input--first"/>
+                <select class="calc__operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                    <option value="%">%</option>
+                    <option value="^">^</option>
+                </select>
+                <input type="number" class="calc__input calc__input--second"/>
+            </div>
+            <button type="submit" class="calc__submit">подсчитать</button>
+            <div class="calc__result">
+                <p class="calc__result-old"></p>
+                <p class="calc__result-new"></p>
+            </div>
+        </div>
+    </body>
+</html>
