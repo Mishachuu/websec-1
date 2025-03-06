@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentResultDisplay = document.querySelector(".calc__result-new");
 
     function calculate() {
-        const firstInput = numberInputs[0].value.trim();
-        const secondInput = numberInputs[1].value.trim();
+        const firstInput = numberInputs[0].value;
+        const secondInput = numberInputs[1].value;
         
         if (firstInput === "" || secondInput === "") {
             currentResultDisplay.textContent = "Ошибка: введите оба числа!";
